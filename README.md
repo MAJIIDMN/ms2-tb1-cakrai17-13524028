@@ -15,7 +15,15 @@ cd ms2-tb1-cakrai17-13524028
 ```
 next:
 ```
+source install/setup.bash
+```
+next:
+```
 colcon build
+```
+next:
+```
+source /opt/ros/humble/setup.bash
 ```
 next:
 ```
