@@ -7,6 +7,12 @@ twist_command_randomizer:
     publish_rate: 5.0  # Hz
 
 # Configuration file for movement_reader node
+cmd_coordinator:
+  ros__parameters:
+    autonomous_vel_topic: "autonomous_vel"
+    cmd_vel_topic: "cmd_vel"
+    cmd_type_topic: "cmd_type"
+  
 movement_reader:
   ros__parameters:
     cmd_vel_topic: "cmd_vel"

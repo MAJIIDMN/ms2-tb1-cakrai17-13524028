@@ -15,6 +15,7 @@ find_package(std_msgs REQUIRED)
 install(PROGRAMS
   ${PROJECT_NAME}/twist_command_randomizer.py
   ${PROJECT_NAME}/movement_reader.py
+  ${PROJECT_NAME}/cmd_coordinator.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

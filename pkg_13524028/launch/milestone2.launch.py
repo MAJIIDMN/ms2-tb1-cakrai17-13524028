@@ -23,6 +23,14 @@ def generate_launch_description():
             parameters=[config_file],
             output='screen',
         ),
+        # Launch the cmd_coordinator node
+        Node(
+            package='pkg_13524028',
+            executable='cmd_coordinator.py',
+            name='cmd_coordinator',
+            parameters=[config_file],
+            output='screen',
+        ),
         
         # Launch the movement_reader node
         Node(
