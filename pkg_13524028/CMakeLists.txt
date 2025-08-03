@@ -7,9 +7,23 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-# uncomment the following section in order to fill in
-# further dependencies manually.
-# find_package(<dependency> REQUIRED)
+find_package(rclpy REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
+
+# Install Python scripts
+install(PROGRAMS
+  ${PROJECT_NAME}/twist_command_randomizer.py
+  ${PROJECT_NAME}/movement_reader.py
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+# Install directories
+install(DIRECTORY
+  launch
+  config
+  DESTINATION share/${PROJECT_NAME}/
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
