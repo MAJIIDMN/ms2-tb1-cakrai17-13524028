@@ -1,37 +1,38 @@
 # ms2-tb1-cakrai17-13524028
----
+
 |Nama|NIM|
 |----|---|
 |Muhammad Nur Majiid|13524028|
 ---
 # How to run
 
+Clone Repository github:
 ```
 git clone https://github.com/MAJIIDMN/ms2-tb1-cakrai17-13524028.git
 ```
-next:
+buka direktori pkg:
 ```
 cd ms2-tb1-cakrai17-13524028
 ```
-next:
+load environment dari workspace:
 ```
 source install/setup.bash
 ```
-next:
+build pkg:
 ```
 colcon build
 ```
-next:
+load environment ROS 2 dari instalasi utama (global) yang ada di sistem(sesuaikan type ros2):
 ```
 source /opt/ros/humble/setup.bash
 ```
-next:
+jalankan semua node:
 ```
 ros2 launch pkg_13524028 milestone2.launch.py
 ```
-
-# Screenshot
 ---
+# Screenshot
+
 ### Spek Wajib
 membuat node yang menghubungkan antara node /twist_command_randomizer dengan node /movement_reader agar dapat mempublish topic /autonomous_vel.
 
