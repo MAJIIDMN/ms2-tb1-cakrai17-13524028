@@ -29,3 +29,4 @@ next:
 ```
 ros2 launch pkg_13524028 milestone2.launch.py
 ```
+![Spek Wajib](https://imgur.com/J0STQDx)
