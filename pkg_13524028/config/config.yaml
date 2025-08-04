@@ -10,6 +10,8 @@ twist_command_randomizer:
 cmd_coordinator:
   ros__parameters:
     autonomous_vel_topic: "autonomous_vel"
+    joy_vel_topic: "joy_vel"
+    keyboard_vel_topic: "keyboard_vel"
     cmd_vel_topic: "cmd_vel"
     cmd_type_topic: "cmd_type"
   
